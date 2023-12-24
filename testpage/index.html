@@ -1,43 +1,15 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>iPhone 14 Pro UI</title>
-    <style>
-        /* スタイルを追加する場合、ここに追加してください */
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-        }
-
-        .button {
-            display: inline-block;
-            margin: 10px;
-            padding: 10px 20px;
-            background-color: #007bff;
-            color: #fff;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-
-        .button:hover {
-            background-color: #0056b3;
-        }
-    </style>
+    <title>LIFF App</title>
+    <script src="https://static.line-scdn.net/liff/edge/2/sdk.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    <button class="button" onclick="displayText('@検索')">検索</button>
-    <button class="button" onclick="displayText('@予約')">予約</button>
-    <button class="button" onclick="displayText('@確認')">確認</button>
+    <div id="button-container">
+        <!-- ボタンを動的に生成する -->
+    </div>
 
-    <div id="result"></div>
-
-    <script>
-        function displayText(text) {
-            document.getElementById("result").textContent = text;
-        }
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
